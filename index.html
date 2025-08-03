@@ -1,66 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GearNestCollective</title>
-    <link rel="icon" href="images/gearnest_logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GearNestCollective</title>
+  <link rel="icon" href="images/gearnest_logo.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="brand">
-            <img src="images/gearnest_logo.png" alt="GearNestCollective Logo">
-            <strong>GearNestCollective</strong>
-        </div>
-        <input type="text" placeholder="Search products, guides, tools...">
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="blog.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </div>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="brand">
+      <img src="images/gearnest_logo.png" alt="GearNestCollective Logo">
+      <strong>GearNestCollective</strong>
     </div>
-
-    <div class="hero">
-        <h1>Welcome to GearNestCollective</h1>
-        <p>Find the best product recommendations across categories</p>
+    <input type="text" placeholder="Search products, guides, tools...">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
     </div>
+  </div>
 
-    <div class="grid">
-        <div class="card">
-            <img src="images/home_essentials.jpg" alt="Home Essentials">
-            <button>Home Essentials</button>
-            <p>Top 5 Budget-Friendly Home Essentials<br>Upgrade your home with smart gadgets and organizers.</p>
-        </div>
-        <div class="card">
-            <img src="images/pet_picks.jpg" alt="Pet Essentials">
-            <button>Pet Essentials</button>
-            <p>7 Must-Have Products for Pet Parents<br>Smart feeders, calming beds, and more for your furry friends.</p>
-        </div>
-        <div class="card">
-            <img src="images/creator_tools.jpg" alt="Creator Tools">
-            <button>Creator Tools</button>
-            <p>Best Budget Tech Tools for Creators<br>Level up your video, audio, and editing setup.</p>
-        </div>
-        <div class="card">
-            <img src="images/outdoor.jpg" alt="Outdoor & Adventure">
-            <button>Outdoor & Adventure</button>
-            <p>Top Camping Tools for Weekend Warriors<br>Stay safe and comfortable on your outdoor adventures.</p>
-        </div>
-        <div class="card">
-            <img src="images/shoes.jpg" alt="Shoe Picks">
-            <button>Shoe Picks</button>
-            <p>Top Trending Shoes for Style & Comfort<br>Step up your shoe game with these 2025 favorites.</p>
-        </div>
-        <div class="card">
-            <img src="images/3dprints.jpg" alt="3D Prints">
-            <button>3D Prints</button>
-            <p>Original 3D Print Files to Download<br>Explore STL models including dragons, dice towers, and organizers.</p>
-        </div>
+  <!-- Amazon Top Picks Section -->
+  <section class="amazon-top-picks">
+    <h2>🔥 Amazon Top Picks</h2>
+    <div class="top-picks-grid">
+      <div class="top-pick-card">
+        <img src="images/top1.jpg" alt="Top Pick 1">
+        <h3>Ultimate Air Fryer</h3>
+        <p>Get crispy, healthy meals in minutes!</p>
+        <a href="#" class="button">Buy Now</a>
+      </div>
+      <div class="top-pick-card">
+        <img src="images/top2.jpg" alt="Top Pick 2">
+        <h3>Smart Pet Feeder</h3>
+        <p>Feed your pet on schedule, from anywhere.</p>
+        <a href="#" class="button">Buy Now</a>
+      </div>
+      <div class="top-pick-card">
+        <img src="images/top3.jpg" alt="Top Pick 3">
+        <h3>LED Creator Light</h3>
+        <p>Perfect lighting for video and photo shoots.</p>
+        <a href="#" class="button">Buy Now</a>
+      </div>
     </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 GearNestCollective | <a href="mailto:info@gearnestcollective.com">info@gearnestcollective.com</a></p>
-    </footer>
+  <!-- Hero Section -->
+  <div class="hero">
+    <h1>Welcome to GearNestCollective</h1>
+    <p>Find the best product recommendations across categories</p>
+  </div>
+
+  <!-- Category Cards Grid -->
+  <div class="grid">
+    <div class="card">
+      <img src="images/home_essentials.jpg" alt="Home Essentials">
+      <button>Home Essentials</button>
+      <p>Top 5 Budget-Friendly Home Essentials<br>Upgrade your home with smart gadgets and organizers.</p>
+    </div>
+    <div class="card">
+      <img src="images/pet_picks.jpg" alt="Pet Essentials">
+      <button>Pet Essentials</button>
+      <p>7 Must-Have Products for Pet Parents<br>Smart feeders, calming beds, and more for your furry friends.</p>
+    </div>
+    <div class="card">
+      <img src="images/creator_tools.jpg" alt="Creator Tools">
+      <button>Creator Tools</button>
+      <p>Best Budget Tech Tools for Creators<br>Level up your video, audio, and editing setup.</p>
+    </div>
+    <div class="card">
+      <img src="images/outdoor.jpg" alt="Outdoor & Adventure">
+      <button>Outdoor & Adventure</button>
+      <p>Top Camping Tools for Weekend Warriors<br>Stay safe and comfortable on your outdoor adventures.</p>
+    </div>
+    <div class="card">
+      <img src="images/shoes.jpg" alt="Shoe Picks">
+      <button>Shoe Picks</button>
+      <p>Top Trending Shoes for Style & Comfort<br>Step up your shoe game with these 2025 favorites.</p>
+    </div>
+    <div class="card">
+      <img src="images/3dprints.jpg" alt="3D Prints">
+      <button>3D Prints</button>
+      <p>Original 3D Print Files to Download<br>Explore STL models including dragons, dice towers, and organizers.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GearNestCollective | <a href="mailto:info@gearnestcollective.com">info@gearnestcollective.com</a></p>
+  </footer>
 </body>
 </html>

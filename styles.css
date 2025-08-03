@@ -1,184 +1,156 @@
-/* Reset and Body */
+/* Reset & Base */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #000000;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #000000;
-    color: #ffffff;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.navbar .brand img {
-    height: 40px;
-    vertical-align: middle;
-}
+.navbar .brand img { height: 40px; }
 .navbar .brand strong {
-    margin-left: 10px;
-    font-size: 1.2rem;
+  margin-left: 10px;
+  font-size: 1.2rem;
 }
 .navbar input[type="text"] {
-    width: 280px;
-    padding: 6px;
-    border: 1px solid #007AFF;
-    border-radius: 4px;
-    margin-left: 20px;
+  width: 280px;
+  padding: 6px;
+  border: 1px solid #007AFF;
+  border-radius: 4px;
 }
 .navbar .nav-links a {
-    color: #007AFF;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
+  color: #007AFF;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
 }
-.navbar .nav-links a:hover {
-    color: #00C4FF;
+.navbar .nav-links a:hover { color: #00C4FF; }
+
+/* Amazon Top Picks */
+.amazon-top-picks {
+  background-color: #f0f8ff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.amazon-top-picks h2 {
+  color: #007AFF;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.top-picks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.top-pick-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.top-pick-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.top-pick-card h3 {
+  margin: 15px 0 5px;
+  color: #000;
+}
+.top-pick-card p {
+  padding: 0 15px 15px;
+  color: #555;
+}
+.top-pick-card .button {
+  background-color: #007AFF;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.top-pick-card .button:hover {
+  background-color: #005bb5;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-    text-align: center;
-    padding: 60px 20px 40px;
-    background-color: #f0f8ff;
+  text-align: center;
+  padding: 60px 20px 40px;
+  background-color: #f7f9fc;
 }
 .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: #007AFF;
+  font-size: 2.5rem;
+  color: #007AFF;
+  margin-bottom: 10px;
 }
-.hero p {
-    font-size: 1.1rem;
-    color: #333333;
-}
+.hero p { color: #333; font-size: 1.1rem; }
 
-/* Grid of Cards */
+/* Grid of Category Cards */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 .card {
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
 }
 .card button {
-    background-color: #007AFF;
-    color: #ffffff;
-    border: none;
-    padding: 12px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  background-color: #007AFF;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
-.card button:hover {
-    background-color: #005bb5;
-}
+.card button:hover { background-color: #005bb5; }
 .card p {
-    margin: 10px 15px;
-    font-size: 0.9rem;
-    color: #444444;
-    flex-grow: 1;
-}
-
-/* Blog List */
-.blog-list {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-.blog-list .post {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-.blog-list .post h2 a {
-    color: #000000;
-    text-decoration: none;
-}
-.blog-list .post h2 a:hover {
-    color: #007AFF;
-}
-.blog-list .post p {
-    color: #333333;
-}
-
-/* Contact Page */
-.contact-page {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 0 20px;
-}
-.contact-info h2 {
-    margin-bottom: 10px;
-    color: #007AFF;
-}
-.contact-form {
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-.contact-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-    color: #000000;
-}
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 4px;
-    margin-bottom: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.contact-form button {
-    background-color: #007AFF;
-    color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-.contact-form button:hover {
-    background-color: #005bb5;
+  margin: 10px 15px;
+  font-size: 0.9rem;
+  color: #444;
+  flex-grow: 1;
 }
 
 /* Footer */
 footer {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px;
-    margin-top: 40px;
-    font-size: 0.9rem;
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
 }
 footer a {
-    color: #00C4FF;
-    text-decoration: none;
+  color: #00C4FF;
+  text-decoration: none;
 }
-footer a:hover {
-    color: #007AFF;
-}
+footer a:hover { color: #007AFF; }
