@@ -2,14 +2,14 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f9fc;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 /* Navbar */
 .navbar {
-    background-color: #007AFF;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
     padding: 15px 20px;
     display: flex;
     justify-content: space-between;
@@ -26,24 +26,25 @@ body {
 .navbar input[type="text"] {
     width: 280px;
     padding: 6px;
-    border: none;
+    border: 1px solid #007AFF;
     border-radius: 4px;
     margin-left: 20px;
 }
 .navbar .nav-links a {
-    color: #00C4FF;
+    color: #007AFF;
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
 }
 .navbar .nav-links a:hover {
-    color: #FFFFFF;
+    color: #00C4FF;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
     padding: 60px 20px 40px;
+    background-color: #f0f8ff;
 }
 .hero h1 {
     font-size: 2.5rem;
@@ -52,7 +53,7 @@ body {
 }
 .hero p {
     font-size: 1.1rem;
-    color: #555;
+    color: #333333;
 }
 
 /* Grid of Cards */
@@ -65,7 +66,8 @@ body {
     padding: 0 20px;
 }
 .card {
-    background-color: white;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -78,8 +80,8 @@ body {
     object-fit: cover;
 }
 .card button {
-    background-color: #00C4FF;
-    color: white;
+    background-color: #007AFF;
+    color: #ffffff;
     border: none;
     padding: 12px;
     font-size: 1rem;
@@ -87,12 +89,12 @@ body {
     transition: background-color 0.3s ease;
 }
 .card button:hover {
-    background-color: #007AFF;
+    background-color: #005bb5;
 }
 .card p {
     margin: 10px 15px;
     font-size: 0.9rem;
-    color: #444;
+    color: #444444;
     flex-grow: 1;
 }
 
@@ -103,18 +105,21 @@ body {
     padding: 0 20px;
 }
 .blog-list .post {
-    background: white;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     margin-bottom: 15px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
 }
-.blog-list .post h2 {
-    margin-bottom: 10px;
+.blog-list .post h2 a {
+    color: #000000;
+    text-decoration: none;
+}
+.blog-list .post h2 a:hover {
     color: #007AFF;
 }
 .blog-list .post p {
-    color: #555;
+    color: #333333;
 }
 
 /* Contact Page */
@@ -128,7 +133,7 @@ body {
     color: #007AFF;
 }
 .contact-form {
-    background: white;
+    background: #ffffff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 1px 4px rgba(0,0,0,0.1);
@@ -137,6 +142,7 @@ body {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
+    color: #000000;
 }
 .contact-form input,
 .contact-form textarea {
@@ -149,11 +155,12 @@ body {
 }
 .contact-form button {
     background-color: #007AFF;
-    color: white;
+    color: #ffffff;
     border: none;
     padding: 12px 20px;
     cursor: pointer;
     border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
 .contact-form button:hover {
     background-color: #005bb5;
@@ -161,8 +168,8 @@ body {
 
 /* Footer */
 footer {
-    background-color: #007AFF;
-    color: white;
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
@@ -173,5 +180,5 @@ footer a {
     text-decoration: none;
 }
 footer a:hover {
-    color: #FFFFFF;
+    color: #007AFF;
 }
