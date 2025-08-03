@@ -102,6 +102,21 @@ body {
 }
 .hero p { color: #333333; font-size: 1.1rem; }
 
+/* Button (Global) */
+.button {
+  display: inline-block;
+  background-color: #007AFF;
+  color: #ffffff;
+  padding: 8px 16px;
+  margin-top: 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.button:hover {
+  background-color: #005bb5;
+}
+
 /* Grid of Category Cards */
 .grid {
   display: grid;
@@ -158,17 +173,11 @@ body {
 .blog-list .post h2 {
   margin-bottom: 10px;
   color: #007AFF;
-}
-.blog-list .post h2 a {
-  color: #000000;
-  text-decoration: none;
-}
-.blog-list .post h2 a:hover {
-  color: #005bb5;
+  font-size: 1.5rem;
 }
 .blog-list .post p {
   color: #333333;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* Contact Page */
@@ -188,15 +197,16 @@ body {
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   flex: 1 1 400px;
 }
-.contact-page .contact-info h2,
-.contact-page .contact-form h2 {
+.contact-info h2,
+.contact-form h2 {
   margin-bottom: 15px;
   color: #007AFF;
+  font-size: 1.5rem;
 }
 .contact-info p {
   margin-bottom: 10px;
   color: #333333;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .contact-form label {
   display: block;
@@ -221,6 +231,7 @@ body {
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
+  font-size: 1rem;
 }
 .contact-form button:hover {
   background-color: #005bb5;
